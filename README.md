@@ -1,20 +1,7 @@
-# ML_in_prod_course
+# ML_in_prod_course (MADE)
 ML in production MADE course
 
-# Fundamentals of Deep Learning (MADE S02E02)
-This repository contains notebooks for the Fundamentals of Deep Learning course.
-
-**Tip #1:**
-
-Loading the entire repository can take a considerable amount of time. A single folder can be downloaded via [DownGit](https://downgit.github.io/).
-
-**Tip #2:**
-
-Sometimes GitHub failes to render a notebook. In that case use [nbviewer](https://nbviewer.jupyter.org/) — it works like a charm!
-
-**Tip #3:**
-
-In those cases when *nbviewer* fails to find a notebook whereas GitHub finds it just fine, try to add `?flush_cache=false` at the end of the *nbviewer* link.
+This repository contains notebooks for the Fundamentals of ML in production course.
 
 ### Lectures
 
