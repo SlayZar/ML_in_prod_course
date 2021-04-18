@@ -1,0 +1,43 @@
+.new-achievements {
+    width: 400px;
+    opacity: 0;
+}
+
+.new-achievements .modal__content {
+    padding: 10px 30px;
+}
+
+.new-achievements__achievement {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+.new-achievements__achievement__img {
+    width: 70px;
+    float: left;
+}
+
+.new-achievements__achievement__info {
+    float: left;
+    width: 250px;
+    padding-left: 10px;
+}
+
+.new-achievements__achievement__info h4 {
+    font-weight: 900;
+}
+
+.new-achievements__more {
+    border: 1px solid;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 3px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3px;
+}

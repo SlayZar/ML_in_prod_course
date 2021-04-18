@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://data.mail.ru/blog/topic/view/18519/ -->
+<html><head lang="ru"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="https://data.mail.ru/static/core/pub/bigdata/img/icon/favicon-32x32.png">
+    <title>
+    Топик - Первое ДЗ - Академия больших данных
+</title>
+
+    
+        <meta name="centrifuge-url" content="https://data.mail.ru/centrifugo/connection/sockjs">
+        <meta name="centrifuge-token" content="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1Mjc0NyIsImV4cCI6MTYxODc2NjU4NH0.hAAD0IAZBR7OLY8CGsvwNoyOj4j2NPMAO8v0edCtU5s">
+        <meta name="centrifuge-notify" content="$notify#52747">
+        <meta name="centrifuge-menu_notify" content="$menu_notify#52747">
+    
+
+    
+        
+    
+        <!-- Google Tag Manager -->
+        <script type="text/javascript" async="" src="./hw_1_description_files/analytics.js"></script><script async="" src="./hw_1_description_files/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K8SVGM5');</script>
+        <!-- End Google Tag Manager -->
+    
+    
+
+
+
+
+    
+
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/static/js/config.js?v=5.47.7" src="./hw_1_description_files/config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-ui" src="./hw_1_description_files/jquery-ui.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-scrollTo" src="./hw_1_description_files/jquery.scrollTo.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./hw_1_description_files/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="./hw_1_description_files/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Highlight" src="./hw_1_description_files/highlight.pack.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-notifier" src="./hw_1_description_files/jquery.notifier.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-cookie" src="./hw_1_description_files/jquery.cookie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-form" src="./hw_1_description_files/jquery.form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="qtip" src="./hw_1_description_files/jquery.qtip.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="markitup" src="./hw_1_description_files/jquery.markitup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqmodal" src="./hw_1_description_files/jquery.jqmodal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chosen" src="./hw_1_description_files/chosen.jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="timepicker" src="./hw_1_description_files/jquery-ui-timepicker-addon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-tmpl" src="./hw_1_description_files/jquery.tmpl.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Highlight-lineNumbers" src="./hw_1_description_files/highlightjs-line-numbers.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="msg" src="./hw_1_description_files/msg.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./hw_1_description_files/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main.bundle" src="./hw_1_description_files/main.bundle.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blogs.bundle" src="./hw_1_description_files/blogs.bundle.js"></script></head><body><input type="hidden" class="project-version" value="5.47.7">
+
+    
+        <link rel="stylesheet" href="./hw_1_description_files/reset.css">
+        <link rel="stylesheet" href="./hw_1_description_files/stylesheet.css">
+        <link rel="stylesheet" href="./hw_1_description_files/jquery.notifier.css">
+        <link rel="stylesheet" href="./hw_1_description_files/jquery-ui.css">
+        <link rel="stylesheet" href="./hw_1_description_files/print.css">
+        <link rel="stylesheet" href="./hw_1_description_files/all.css">
+        <link rel="stylesheet" href="./hw_1_description_files/chosen.css">
+        <link rel="stylesheet" href="./hw_1_description_files/jquery.qtip.min.css">
+
+        <link rel="stylesheet" href="./hw_1_description_files/line-numbers.css">
+        <link rel="stylesheet" href="./hw_1_description_files/github.css">
+
+        <link rel="stylesheet" href="./hw_1_description_files/jquery-ui-timepicker-addon.css">
+        <link rel="stylesheet" href="./hw_1_description_files/style.css">
+        <link rel="stylesheet" href="./hw_1_description_files/style(1).css">
+
+        <link rel="stylesheet" href="./hw_1_description_files/redesign.css">
+        <link rel="stylesheet" href="./hw_1_description_files/notifications.css">
+
+        <link rel="stylesheet" href="./hw_1_description_files/admin-panel.css">
+        <link rel="stylesheet" href="./hw_1_description_files/checkin-panel.css">
+        <link rel="stylesheet" href="./hw_1_description_files/modal-log.css">
+        <link rel="stylesheet" href="./hw_1_description_files/panel-container.css">
+        <link rel="stylesheet" href="./hw_1_description_files/check.css">
+    
+
+    
+
+
+
+
+    <script type="text/javascript">var VERSION = "5.47.7";</script>
+
+    
+        <script>
+            function initScript() {
+                require([
+                    
+                    'jquery-ui',
+                    'jquery-scrollTo',
+                    'jquery-notifier',
+                    'jquery-cookie',
+                    'jquery-form',
+                    'msg',
+                    'main.bundle',
+                    
+    'blogs.bundle',
+
+                ], function () {
+                    
+    require([
+
+    ]);
+
+                });
+            }
+        </script>
+
+        <script src="./hw_1_description_files/jquery.min(1).js"></script>
+        <script src="./hw_1_description_files/require.js" data-main="/static/js/config.js?v=5.47.7"></script>
+
+        <script src="./hw_1_description_files/jquery.jqmodal.js"></script>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8SVGM5"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    
+
+
+
+
+
+
+
+<div id="header-back"></div>
+<div id="header-wrapper">
+    <header id="header" role="banner">
+        <h1 class="site-name">
+            <a href="https://data.mail.ru/">
+                <img src="./hw_1_description_files/logo_bigdata.png" alt="Академия больших данных" style="vertical-align: middle; height: 30px;">
+            </a>
+        </h1>
+        
+
+<ul class="nav nav-main nav-left-mobile">
+    <li class="technopark__menu__item" id="dropdown-navigation">
+        <a href="https://data.mail.ru/blog/topic/view/18519/#" id="dropdown-navigation-trigger">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-angle-down"></i></a>
+    </li>
+</ul>
+
+<ul class="nav nav-main nav-left js-main-menu">
+    
+        <li class=" technopark__menu__item technopark__menu__item_142
+            active">
+            <a href="https://data.mail.ru/blog/">Блоги </a>
+        </li>
+    
+        <li class=" technopark__menu__item technopark__menu__item_143
+            ">
+            <a href="https://data.mail.ru/people/">Люди </a>
+        </li>
+    
+        <li class=" technopark__menu__item technopark__menu__item_144
+            ">
+            <a href="https://data.mail.ru/curriculum/program/">Программа </a>
+        </li>
+    
+        <li class=" technopark__menu__item technopark__menu__item_146
+            ">
+            <a href="https://data.mail.ru/schedule/">Расписание </a>
+        </li>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+        <div class="stretcher" style="margin: 0 auto"></div>
+        <ul class="nav nav-main">
+            <li id="dropdown-write">
+                <a href="https://data.mail.ru/blog/topic/view/18519/#" id="dropdown-write-trigger">
+                    <i class="fas fa-plus-square"></i>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+            </li>
+            <li class="js-show-search"><a href="https://data.mail.ru/blog/topic/view/18519/#">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-angle-left"></i>
+            </a></li>
+        </ul>
+        <ul class="nav nav-main nav-main-search">
+            <li class="js-search-input" style="display:none">
+                <form action="https://data.mail.ru/search/">
+                    <input type="text" name="query" placeholder="Поиск...">
+                </form>
+            </li>
+        </ul>
+        <script>$(function () {
+            $('.js-show-search').on('click', function () {
+                if ($('#header .js-search-input').is(':visible')) {
+                    return false;
+                }
+                if (window.matchMedia("(max-width: 788px)").matches) {
+                    $('.nav-left-mobile').toggle();
+                    $('.js-show-search').toggle();
+                    $('#dropdown-write').toggle();
+                    $('.nav-main-search').width('100%');
+                    $('#header .js-search-input').toggle().find('input').focus().val('').width();
+                } else {
+                    $('#header .js-main-menu').toggle();
+                    $('#header .js-search-input').toggle(400).find('input').focus().val('').width();
+                }
+            });
+            $('.js-search-input input').on('blur', function (event) {
+                if (window.matchMedia("(max-width: 788px)").matches) {
+                    $('.nav-left-mobile').toggle();
+                    $('.js-show-search').toggle();
+                    $('#dropdown-write').toggle();
+                    $('.nav-main-search').width('unset');
+                    $('#header .js-search-input').toggle();
+                } else {
+                    $('#header .js-search-input').toggle(400, () => {
+                        $('#header .js-main-menu').toggle();
+                    });
+                }
+            });
+        });</script>
+
+        <ul class="nav dropdown-notification" id="dropdown-notification" data-url-get="/notifications/" data-url-post="/notifications/read/">
+            <li>
+                <div class="dropdown-notification__bell">
+                    <a><img src="./hw_1_description_files/bell.svg" alt="Оповещения"></a>
+                </div>
+                <div class="dropdown-notification__bulb" style="display: none"></div>
+            </li>
+        </ul>
+
+        <div class="dropdown-user" id="dropdown-user">
+            <a href="https://data.mail.ru/profile/d.vaskin/" class="full_name">
+                <img src="./hw_1_description_files/5a44f08eb45ee4ff69f796aa565cac9f.jpg" alt="avatar" class="avatar">
+                <span class="username">Дмитрий Васькин</span>
+            </a>
+
+            <div class="dropdown-user-trigger js-user-trigger" id="dropdown-user-trigger">
+                <i class="fas fa-angle-down"></i>
+            </div>
+
+            <div class="dropdown-mobile-trigger js-user-trigger">
+                <img src="./hw_1_description_files/5a44f08eb45ee4ff69f796aa565cac9f.jpg" alt="avatar" class="avatar" style="margin-right: 8px;">
+                <i class="fas fa-angle-down" style="color: #cfcfcf; font-size: 15px;"></i>
+            </div>
+        </div>
+    </header>
+</div>
+
+
+    
+        <a class="active_selections" href="https://data.mail.ru/cabinet/enrollee/">Открыт приём заявок!</a>
+    
+
+
+<div class="bug-report bug-report-trigger" hidden="">
+    <div class="bug-report__wrapper">
+        <span class="bug-report__button">Обратная связь</span>
+    </div>
+</div>
+
+<div id="bug-modal" class="popup popup-warning" style="width: 500px"><span class="close" title="Закрыть"></span>
+
+    <p class="heading">Обратная связь</p>
+
+    <div class="modal__content" style="width: 100%; padding: 0">
+
+        <form action="https://data.mail.ru/bugreport/" id="bug_form" method="POST">
+    <input type="hidden" name="csrfmiddlewaretoken" value="hmQcaFLAxI1qCr50NH4QXwxLAEcbkF2D">
+    <p class="bug-report__errors form-error"></p>
+    <p>
+        <label style="font-weight:bold" for="id_report_theme">Тема</label>
+        <input class="input-text" name="theme" id="id_report_theme">
+        <span class="bug-report__errors theme-error"></span>
+    </p>
+    <p>
+        <label class="bug-report__text-label" for="id_report_text">
+            Максимально подробно опишите ошибку и как её повторить:
+        </label>
+        <div><div id="markItUpId_report_text" class="markItUp"><div class="markItUpContainer"><div class="markItUpHeader"><ul><li class="markItUpButton markItUpButton1 editor-bold"><a href="https://data.mail.ru/blog/topic/view/18519/" title="Жирный">Жирный</a></li><li class="markItUpButton markItUpButton2 editor-italic"><a href="https://data.mail.ru/blog/topic/view/18519/" title="Курсив">Курсив</a></li><li class="markItUpButton markItUpButton3 editor-stroke"><a href="https://data.mail.ru/blog/topic/view/18519/" title="Зачеркнутый">Зачеркнутый</a></li><li class="markItUpButton markItUpButton4 editor-underline"><a href="https://data.mail.ru/blog/topic/view/18519/" title="Подчеркнутый">Подчеркнутый</a></li><li class="markItUpSeparator">---------------</li><li class="markItUpButton markItUpButton5 editor-quote"><a href="https://data.mail.ru/blog/topic/view/18519/" title="Цитировать">Цитировать</a></li><li class="markItUpButton markItUpButton6 editor-code"><a href="https://data.mail.ru/blog/topic/view/18519/" title="Код">Код</a></li><li class="markItUpButton markItUpButton7 editor-picture"><a href="https://data.mail.ru/blog/topic/view/18519/" title="Изображение">Изображение</a></li><li class="markItUpButton markItUpButton8 editor-link"><a href="https://data.mail.ru/blog/topic/view/18519/" title="Ссылка">Ссылка</a></li><li class="markItUpSeparator">---------------</li><li class="markItUpButton markItUpButton9 editor-clean"><a href="https://data.mail.ru/blog/topic/view/18519/" title="Очистить от тегов">Очистить от тегов</a></li></ul></div><textarea class="bug-report__text bugreport-markitup-editor markItUpEditor" name="text" id="id_report_text" style="resize: none; min-height: 200px; max-height: 300px"></textarea><div class="markItUpFooter"><div class="markItUpResizeHandle"></div></div></div></div></div>
+        <span class="bug-report__errors text-error"></span>
+    </p>
+    <div class="bug-report__bottom">
+        <a href="https://data.mail.ru/blog/topic/view/18519/#" class="button button-primary">Отправить</a>
+        <a href="https://data.mail.ru/bugreport/list/" class="bug-report__link">Cписок вопросов</a>
+    </div>
+</form>
+
+        <h2 class="bug-report__thank-you" style="font-size: 20px; text-align:center; display: none">Спасибо!</h2>
+    </div>
+</div>
+
+
+
+<div id="container">
+    
+        <nav id="nav" hidden="">
+            <ul class="nav nav-menu">
+                <li>
+                    <a href="https://data.mail.ru/feed/main/">Главное</a>
+                </li>
+                <li>
+                    <a href="https://data.mail.ru/feed/subscribed/">Лента</a>
+                </li>
+                <li>
+                    <a href="https://data.mail.ru/feed/owned/">Мои топики</a>
+                </li>
+                <li>
+                    <a href="https://data.mail.ru/feed/favourite/">Избранное</a>
+                </li>
+            </ul>
+
+            <div class="search-header">
+                <div class="search-header-show" id="search-header-show">
+                    <i class="icon-synio-search"></i>
+                    <a href="https://data.mail.ru/blog/topic/view/18519/#" class="link-dotted">Найти</a>
+                </div>
+
+                <form class="search-header-form" id="search-header-form" action="https://data.mail.ru/search/topics/" style="display: none;">
+                    
+    <div class="search-in-current-blog">
+        <input type="checkbox" name="in_current"> Поиск по данному блогу
+        <input type="hidden" name="blog_id" value="339">
+    </div>
+    
+                        <input type="text" placeholder="Поиск" maxlength="255" name="query" class="input-text">
+                        <input type="submit" value="" title="Найти" class="input-submit">
+                    
+
+                </form>
+            </div>
+            
+        </nav>
+    
+
+    
+        
+
+
+
+<script type="text/javascript">
+    window.urlsSchedulePanelMap = {
+        scheduleItemAjaxUrl: '/schedule/item_gtp/0/',
+    };
+    window.static = {
+        dataPlaceIcon: "/static/schedule/priv/default/img/place.png",
+        dataTimeIcon: "/static/schedule/priv/default/img/time.png",
+        dataGroupIcon: "/static/schedule/priv/default/img/student_group.png"
+    };
+    window.schedule_week = JSON.stringify({"2021-04-17": [], "2021-04-18": [], "2021-04-19": [], "2021-04-23": [], "2021-04-22": [], "2021-04-21": [], "2021-04-20": []});
+    window.schedule_today = JSON.stringify({"day": "2021-04-18"});
+</script>
+<script id="schedule-panel-modal-tml" type="text/template">
+    <div class="large-item__content">
+   <div class="large-item__header">
+       <% if (tutor_link) { %><a href="<%- tutor_link %><% } %>"><img src="<%- tutor_image %>" class="large-item__image"><% if (tutor_link) { %></a><% } %>
+       <div class="large-item__name">
+           <<% if (tutor_link) { %>a<% } else { %>span<% } %> href="<%- tutor_link %>" class="large-item__tutor"><%- tutor_name %></<% if (tutor_link) { %>a<% } else { %>span<% } %> >
+           <a href="<%- discipline_link %>" class="large-item__discipline"><%- discipline %></a>
+       </div>
+   </div>
+   <div class="horizontal-divider"></div>
+   <a href="<%- lesson_link %>"><div class="large-item__theme"><%- lesson %></div></a>
+   <div class="horizontal-divider"></div>
+   <div class="large-item__timeplace">
+       <div class="time-wrap">
+           <i class="far fa-clock" aria-hidden="true"></i>
+           <div class="large-item__time"><%- start_time %>-<%- end_time %></div>
+       </div>
+       <div class="vertical-divider"> </div>
+       <div class="date-wrap">
+           <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+           <div class="large-item__place"><%- place %></div>
+       </div>
+   </div>
+   <div class="horizontal-divider"></div>
+   <div class="large-item__group last">
+       <div class="item__groups">
+           <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+           <div class="groups__value"><%- groups %></div>
+       </div>
+       <% if (!future) { %>
+       <div class="vertical-divider"></div>
+       <div class="item__people-count">
+           <i class="fa fa-users" aria-hidden="true"></i>
+           <div class="people-count__value"><%- students_count %></div>
+       </div>
+       <% } %>
+   </div>
+<% if (!future && student && attended) { %>
+   <div class="horizontal-divider"></div>
+   <div class="item__buttons last">
+       <div class="item__buttons-wrap">
+           <% if (!response_exist) {%>
+           <a href="<%- response_url %>" class="button">
+               <i class="fas fa-comment" aria-hidden="true"></i> Оставить отзыв
+           </a>
+           <% } else { %>
+           <div class="review_done"><i class="fas fa-check" aria-hidden="true"></i> Спасибо за отзыв</div>
+           <% } %>
+       </div>
+   </div>
+<% } %>
+</div>
+</script>
+
+
+
+    
+
+    
+        <div id="wrapper" class="no-sidebar">
+
+             
+
+            <div id="content" role="main">
+                
+
+                
+    <div class="feed topic-show">
+        <div class="feed-left">
+            
+
+
+
+
+<article class="topic topic-type-topic js-topic">
+    <header class="topic-header">
+        <h1 class="topic-title">
+            <p>Первое ДЗ</p>
+            
+        </h1>
+
+        <div class="topic-info">
+            <div>
+                <a href="https://data.mail.ru/blog/view/339/" class="topic-blog">Машинное обучение в продакшене</a>
+                
+                
+            </div>
+
+            
+        </div>
+    </header>
+
+    <div class="cf">
+        <div class="topic-content text">
+            
+
+            <strong>Всем привет!&nbsp;</strong><br>
+<br>
+Выполнение первого домашнего задания оценивается в 30 баллов.&nbsp;<br>
+<br>
+Вам потребуется сделать "production ready" проект для решения задачи классификации, то есть написать код для обучения и предикта, покрыть его тестами, обучить с помощью него модельку.<br>
+<br>
+Для обучения модели, можете использовать датасет&nbsp;https://www.kaggle.com/ronitf/heart-disease-uci, либо иной небольшой датасет для классификации(если используете другой, то опишите какой и как его получить в readme)<br>
+<br>
+Пример подобного разбирали на паре&nbsp;https://github.com/made-ml-in-prod-2021/ml_project_example, не нужно отсюда копировать=)<br>
+<br>
+<strong>Критерии (указаны максимальные баллы, по каждому критерию ревьюер может поставить баллы частично):&nbsp;</strong><br>
+-2) Назовите ветку homework1 (1 балл)<br>
+-1) положите код в папку ml_project<br>
+0) В описании к пулл реквесту описаны основные "архитектурные" и тактические решения, которые сделаны в вашей работе. В общем, описание что именно вы сделали и для чего, чтобы вашим ревьюерам было легче понять ваш код. (3 балла)<br>
+<br>
+1) Выполнение EDA, закоммитьте ноутбук в папку с ноутбуками (3&nbsp;баллов)<br>
+Вы так же можете построить в ноутбуке прототип(если это вписывается в ваш стиль работы)<br>
+Можете использовать не ноутбук, а скрипт, который сгенерит отчет, закоммитьте и скрипт и отчет (за это + 1 балл)<br>
+<br>
+2) Проект имеет модульную структуру(не все в одном файле =) ) (3 баллов)<br>
+<br>
+3) использованы логгеры (2 балла)<br>
+<br>
+4) написаны тесты на отдельные модули и на прогон всего пайплайна(5 баллов)<br>
+<br>
+5) Для тестов генерируются синтетические данные, приближенные к реальным (5 баллов)<br>
+- можно посмотреть на библиотеки&nbsp;https://faker.readthedocs.io/en/,&nbsp;https://feature-forge.readthedocs.io/en/latest/<br>
+- можно просто руками посоздавать данных, собственноручно написанными функциями<br>
+как альтернатива, можно закоммитить файл с подмножеством трейна(это не оценивается)&nbsp;<br>
+<br>
+6) Обучение модели конфигурируется с помощью конфигов в json или yaml, закоммитьте как минимум 2 корректные конфигурации, с помощью которых можно обучить модель (разные модели, стратегии split, preprocessing) (2 балла)<br>
+<br>
+7) Используются датаклассы для сущностей из конфига, а не голые dict (3 балла)&nbsp;<br>
+<br>
+8) Используйте кастомный трансформер(написанный своими руками) и протестируйте его(3 балла)<br>
+<br>
+9) Обучите модель, запишите в readme как это предлагается (3 балла)<br>
+<br>
+10) напишите функцию predict, которая примет на вход артефакт/ы от обучения, тестовую выборку(без меток) и запишет предикт, напишите в readme как это сделать (3 балла)&nbsp;&nbsp;<br>
+<br>
+11) Используется hydra&nbsp; (https://hydra.cc/docs/intro/) (3 балла - доп баллы)<br>
+<br>
+12) Настроен CI(прогон тестов, линтера) на основе github actions&nbsp;&nbsp;(3 балла - доп баллы (будем проходить дальше в курсе, но если есть желание поразбираться - welcome)<br>
+13) Проведите самооценку, опишите, в какое колво баллов по вашему мнению стоит оценить вашу работу и почему (1 балл доп баллы)&nbsp;<br>
+<br>
+<br>
+<strong>PS:&nbsp;</strong>Можно использовать cookiecutter-data-science&nbsp; https://drivendata.github.io/cookiecutter-data-science/ , но поудаляйте папки, в которые вы не вносили изменения, чтобы не затруднять ревью<br>
+<br>
+<br>
+<strong>Сроки выполнения</strong>:<br>
+Мягкий дедлайн: 2 мая 23:59<br>
+Жесткий дедлайн:&nbsp; 9 мая 23:59&nbsp;<br>
+(небольшие доработки по требованиям ревьюеров можно будет вносить после срока, важно, чтобы основная часть кода была написана до дедлайна)<br>
+После мягкого дедлайна все полученные баллы умножаются на 0.5&nbsp;<br>
+<br>
+<strong>Процедура сдачи</strong>:&nbsp;<br>
+После выполнения ДЗ, создаем пулл реквест, в&nbsp;ревьюеры добавляем teachers и students(см. скрины), к вам в ревьюеры автоматически добавиться один из "профессиональных проверяющий" и случайный студент. Оценка преподавателя будет использована как финальная.&nbsp; Преподаватель начнет проверять работу через 2-3 дня после добавления, чтобы дать возможность высказаться проверяющему студенту.&nbsp;<br>
+<br>
+<strong>Про ревью друг друга</strong>:<br>
+Когда вас добавили в ревью, посмотрите код коллеги, напишите свои замечания, если что-то по вашему мнению сделано не очень хорошо, что можно в этом коде улучшить, если видите особенно клевый участок кода, то можно похвалить автора=) И не стоит себя недооценивать! Далее напишите, какому кол-ву баллов по вашему мнению соотвествует работа и почему бы вы лично что-то сняли.&nbsp;<br>
+<br>
+Если вас назначили и вы <strong>НЕ БУДЕТЕ&nbsp;</strong>делать ревью, смотреть код принципиально, то удалите себя из ревьюеров и добавьте students заново(выберет другого)<br>
+<br>
+Если решили покинуть курс(не сдавать домашние работы), то заполните <a href="https://docs.google.com/forms/d/1l1VFdoW5gCXSToZ4lfwhus4cUgds94ZPn_fOgRAz-CA" target="_blank">форму</a>, я удалю из организации и вы не будете попадать в ревьюеры.&nbsp;(не вводите ники друг друга, это жестко!)<br>
+<br>
+<strong>Какая мотивация для вас так делать</strong>?<br>
+1) Фан<br>
+2) 2 балла за факт сделанного ревью и поставленной оценки<br>
+3) Каждый из преподавателей для каждого домашнего задания будут выбирать лучшего ревьюера и мы поставим ему не 2, а 7 баллов(не обязательно количество таких людей будет равно количеству преподавателей, но так как вас много -- это вполне возможно)<br>
+<br>
+<br>
+Всем хороших выходных!<br>
+<br>
+<br>
+<img alt="" height="336" src="./hw_1_description_files/screenshot-2021-04-09-at-190942.png" width="664"><img alt="" height="372" src="./hw_1_description_files/screenshot-2021-04-09-at-190626.png" width="664">
+
+            
+        </div>
+
+        
+
+
+
+
+    <div class="poll">
+        <p class="poll-header">Норм?</p>
+        
+            <form action="https://data.mail.ru/blog/topic/vote_poll/794/" method="POST">
+                <input type="hidden" name="csrfmiddlewaretoken" value="hmQcaFLAxI1qCr50NH4QXwxLAEcbkF2D">
+                <div class="poll-vote">
+                    
+                        <button class="answer vote" name="answer" value="23210">слишком изи</button>
+                    
+                        <button class="answer vote" name="answer" value="23211">норм</button>
+                    
+                        <button class="answer vote" name="answer" value="23212">сложна</button>
+                    
+                    <button class="answer abstain" name="abstain" value="1">Воздержаться</button>
+                </div>
+            </form>
+        
+    </div>
+
+    </div>
+
+    <footer class="topic-footer">
+        <ul class="topic-info">
+            <li class="topic-info-author">
+                <a href="https://data.mail.ru/profile/m.maryufich/"><img src="./hw_1_description_files/edbfa51b2b5abc33691b76118ecbcd89.jpg" alt="avatar" class="avatar"></a>
+                <a rel="author" href="https://data.mail.ru/profile/m.maryufich/">Михаил Марюфич</a>
+            </li>
+
+            <li class="topic-info-date show-on-large">
+                <span title="9 апреля 2021 г. 19:38">9 апреля 2021 г. в 19:38</span>
+            </li>
+            <li style="margin:0 auto"></li>
+
+            <li class="topic-info-favourite react-topic-favourite" data-active="" data-count="9" data-url="/blog/topic/toggle_favourite/18519/">
+            <div class="favourite-wrapper"><i class="fas fa-star"></i><span class="favourite-count">9</span></div></li>
+
+            <li class="topic-info-comments">
+                <a href="https://data.mail.ru/blog/topic/view/18519/#comments" title="читать комментарии">
+                    <i class="fas fa-comment-dots"></i>
+                    0
+                </a>
+            </li>
+
+            
+                <li class="topic-info-vote react-topic-vote" data-vote-url="/blog/topic/vote/18519/" data-cancel-url="/blog/topic/cancel/vote/18519/" data-author="" data-value="" data-rating="21,0">
+                <div class="vote-topic-wrapper"><div class="vote-topic voted-zero vote-count-positive"><div class="vote-down vote-btn"><i class="fas fa-arrow-down"></i></div><div class="vote-count"><span>+21</span></div><div class="vote-up vote-btn"><i class="fas fa-arrow-up"></i></div></div></div></li>
+            
+
+        </ul>
+        <ul class="topic-info">
+            <li class="topic-info-date show-on-small topic-info-date-mobile">
+                <span title="9 апреля 2021 г. 19:38">9 апреля 2021 г. в 19:38</span>
+            </li>
+        </ul>
+    </footer>
+</article>
+<script src="./hw_1_description_files/topics.min.js"></script>
+
+            
+
+<div class="comments" id="comments"><div><header class="comments-header"><h3><span id="count-comments">0</span>&nbsp;комментариев</h3><div class="subscribe"><input type="checkbox" id="comment_subscribe" class="input-checkbox"><label for="comment_subscribe">подписаться на новые комментарии</label></div><a name="comments"></a></header><div><h4 class="reply-header"><a href="javascript:" class="comment-add-link">Оставить комментарий</a></h4></div></div></div>
+<script>
+    USER = {
+        id: 52747,
+        
+    };
+    TOPIC = {
+        id: 18519,
+        author: {
+            id: 57728,
+        },
+        is_user_subscribed: false,
+        forbid_comment: false,
+    };
+    COMMENTS_COUNT = 0;
+    COMMENTS_TREE = [
+        
+    ];
+
+    CKEDITOR_URL = '/static/lib/ckeditor/ckeditor.js?v=5.47.7';
+</script>
+<script src="./hw_1_description_files/topic_detail.min.js" type="text/javascript"></script>
+        </div>
+
+        <div class="feed-right">
+            
+
+<div class="block block-type-stream" id="react-feed-stream" data-url="/feed/update/stream/" data-all-url="/feed/live/broadcast/">
+<div><header class="block-header sep"><div class="block-update"><i class="fas fa-sync-alt"></i></div><h3><a href="https://data.mail.ru/feed/live/broadcast/" title="Весь эфир">Прямой эфир</a></h3><ul class="nav nav-pills"><li class="active"><a class="broadcast-toggle" href="https://data.mail.ru/blog/topic/view/18519/#">Мои</a></li><li class=""><a class="broadcast-toggle" href="https://data.mail.ru/blog/topic/view/18519/#">Все</a></li></ul></header><div class="block-content"><div class="js-block-stream-content"><ul class="latest-list"><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/d.lyisuhin/" class="author">Даниил Лысухин</a>&nbsp;<span title="16 апреля 2021 г. в 11:36">2 дня назад</span></p><a href="https://data.mail.ru/blog/view/282/" class="stream-blog">Компьютерное зрение</a> → <a href="https://data.mail.ru/blog/topic/view/18628/" class="stream-topic comment-popup">Баллы и оценки</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/v.bryinza/" class="author">Виктория Брынза</a>&nbsp;<span title="13 апреля 2021 г. в 19:05">4 дня назад</span></p><a href="https://data.mail.ru/blog/view/297/" class="stream-blog">Практический курс Big Data</a> → <a href="https://data.mail.ru/blog/topic/view/18589/" class="stream-topic comment-popup">Занятие по&nbsp;Spark DataFrames, Spark SQL началось!</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/v.bryinza/" class="author">Виктория Брынза</a>&nbsp;<span title="12 апреля 2021 г. в 20:07">5 дней назад</span></p><a href="https://data.mail.ru/blog/view/297/" class="stream-blog">Практический курс Big Data</a> → <a href="https://data.mail.ru/blog/topic/view/18575/" class="stream-topic comment-popup">Лекция за 13 апреля "Spark DataFrames, Spark SQL" пройдет в онлайн-формате!</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/m.maryufich/" class="author">Михаил Марюфич</a>&nbsp;<span title="9 апреля 2021 г. в 19:38">8 дней назад</span></p><a href="https://data.mail.ru/blog/view/339/" class="stream-blog">Машинное обучение в продакшене</a> → <a href="https://data.mail.ru/blog/topic/view/18519/" class="stream-topic comment-popup">Первое ДЗ</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/v.bulaev/" class="author">Владимир Булаев</a>&nbsp;<span title="8 апреля 2021 г. в 17:20">9 дней назад</span></p><a href="https://data.mail.ru/blog/topic/view/18478/#comment_id_36810" class="stream-topic comment-popup">Обратная связь на 2 семестре</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>3</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/k.panchenko/" class="author">Катерина Панченко</a>&nbsp;<span title="8 апреля 2021 г. в 14:42">9 дней назад</span></p><a href="https://data.mail.ru/blog/view/273/" class="stream-blog">Общие вопросы</a> → <a href="https://data.mail.ru/blog/topic/view/18478/" class="stream-topic comment-popup">Обратная связь на 2 семестре</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>3</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/i.konov/" class="author">Илья Конов</a>&nbsp;<span title="8 апреля 2021 г. в 10:20">10 дней назад</span></p><a href="https://data.mail.ru/blog/view/282/" class="stream-blog">Компьютерное зрение</a> → <a href="https://data.mail.ru/blog/topic/view/18469/" class="stream-topic comment-popup">Мануал доступа к AWS</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/v.bryinza/" class="author">Виктория Брынза</a>&nbsp;<span title="6 апреля 2021 г. в 19:37">11 дней назад</span></p><a href="https://data.mail.ru/blog/view/297/" class="stream-blog">Практический курс Big Data</a> → <a href="https://data.mail.ru/blog/topic/view/18459/" class="stream-topic comment-popup">Курс “Spark: from zero to hero”</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/v.pozdnyakov/" class="author">Виталий Поздняков</a>&nbsp;<span title="6 апреля 2021 г. в 16:33">11 дней назад</span></p><a href="https://data.mail.ru/blog/view/315/" class="stream-blog">Машинное обучение на графах и анализ социальных сетей</a> → <a href="https://data.mail.ru/blog/topic/view/18455/" class="stream-topic comment-popup">Запускаем соревнование по максимизации влияния на графе</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/ra.nejchev/" class="author">Радослав Нейчев</a>&nbsp;<span title="6 апреля 2021 г. в 1:01">12 дней назад</span></p><a href="https://data.mail.ru/blog/topic/view/18353/#comment_id_36805" class="stream-topic comment-popup">Второе домашнее задание и первая лабораторная работа, описание структуры заданий</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>2</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/ra.nejchev/" class="author">Радослав Нейчев</a>&nbsp;<span title="6 апреля 2021 г. в 0:57">12 дней назад</span></p><a href="https://data.mail.ru/blog/view/290/" class="stream-blog">Обработка естественного языка</a> → <a href="https://data.mail.ru/blog/topic/view/18448/" class="stream-topic comment-popup">Второе домашнее задание и первая лабораторная работа</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/d.lyisuhin/" class="author">Даниил Лысухин</a>&nbsp;<span title="5 апреля 2021 г. в 15:07">12 дней назад</span></p><a href="https://data.mail.ru/blog/view/282/" class="stream-blog">Компьютерное зрение</a> → <a href="https://data.mail.ru/blog/topic/view/18440/" class="stream-topic comment-popup">Первое ДЗ - предсказание ключевых точек лица</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/e.gorbunov/" class="author">Эдуард Горбунов</a>&nbsp;<span title="31 марта 2021 г. в 17:32">17 дней назад</span></p><a href="https://data.mail.ru/blog/view/283/" class="stream-blog">Методы оптимизации в машинном обучении</a> → <a href="https://data.mail.ru/blog/topic/view/18397/" class="stream-topic comment-popup">Третье и четвёртое домашние задания</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/m.maryufich/" class="author">Михаил Марюфич</a>&nbsp;<span title="31 марта 2021 г. в 16:59">17 дней назад</span></p><a href="https://data.mail.ru/blog/view/339/" class="stream-blog">Машинное обучение в продакшене</a> → <a href="https://data.mail.ru/blog/topic/view/18393/" class="stream-topic comment-popup">Создаем проект на гитхабе</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/v.bryinza/" class="author">Виктория Брынза</a>&nbsp;<span title="30 марта 2021 г. в 18:01">18 дней назад</span></p><a href="https://data.mail.ru/blog/view/297/" class="stream-blog">Практический курс Big Data</a> → <a href="https://data.mail.ru/blog/topic/view/18380/" class="stream-topic comment-popup">Обновленные даты дедлайнов</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/v.bryinza/" class="author">Виктория Брынза</a>&nbsp;<span title="30 марта 2021 г. в 16:39">18 дней назад</span></p><a href="https://data.mail.ru/blog/topic/view/18377/#comment_id_36798" class="stream-topic comment-popup">Добро пожаловать на модуль Hive</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>1</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/v.bryinza/" class="author">Виктория Брынза</a>&nbsp;<span title="30 марта 2021 г. в 16:39">18 дней назад</span></p><a href="https://data.mail.ru/blog/view/297/" class="stream-blog">Практический курс Big Data</a> → <a href="https://data.mail.ru/blog/topic/view/18377/" class="stream-topic comment-popup">Добро пожаловать на модуль Hive</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>1</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/m.maryufich/" class="author">Михаил Марюфич</a>&nbsp;<span title="30 марта 2021 г. в 14:58">18 дней назад</span></p><a href="https://data.mail.ru/blog/view/339/" class="stream-blog">Машинное обучение в продакшене</a> → <a href="https://data.mail.ru/blog/topic/view/18371/" class="stream-topic comment-popup">Машинное обучение в продакшене стартует</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/t.tsyigan/" class="author">Татьяна Цыган</a>&nbsp;<span title="29 марта 2021 г. в 21:24">19 дней назад</span></p><a href="https://data.mail.ru/blog/view/282/" class="stream-blog">Компьютерное зрение</a> → <a href="https://data.mail.ru/blog/topic/view/18368/" class="stream-topic comment-popup">Собираем информацию, кому нужны виртуалки для сдачи дисциплины "Компьютерное зрение"</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>0</span></div></li><li class="js-title-comment"><div><p><a href="https://data.mail.ru/profile/ra.nejchev/" class="author">Радослав Нейчев</a>&nbsp;<span title="27 марта 2021 г. в 12:45">22 дня назад</span></p><a href="https://data.mail.ru/blog/view/290/" class="stream-blog">Обработка естественного языка</a> → <a href="https://data.mail.ru/blog/topic/view/18353/" class="stream-topic comment-popup">Второе домашнее задание и первая лабораторная работа, описание структуры заданий</a>&nbsp;<span class="block-item-comments"><i class="fas fa-comment-dots"></i>2</span></div></li></ul></div><footer><a href="https://data.mail.ru/feed/live/broadcast/">Весь эфир</a></footer></div></div></div>
+<script src="./hw_1_description_files/panels.min.js"></script>
+
+            
+
+<div class="block block-type-blogs" id="react-blogs-block" data-url="/blog/blogs/block/" data-all-url="/blog/"><div><header class="block-header sep"><h3>Блоги</h3><div class="block-update"><i class="fas fa-sync-alt"></i></div><ul class="nav nav-pills"><li class="active"><a href="https://data.mail.ru/blog/topic/view/18519/#">Топ</a></li><li class=""><a href="https://data.mail.ru/blog/topic/view/18519/#">Подключенные</a></li><li class=""><a href="https://data.mail.ru/blog/topic/view/18519/#">Мои</a></li></ul></header><div class="block-content"><div><ul class="block-blog-list"><li><a href="https://data.mail.ru/blog/view/338/">Продвинутое машинное обучение</a><strong>5.67</strong></li><li><a href="https://data.mail.ru/blog/view/310/">Глубокое обучение и обучение с подкреплением</a><strong>3.39</strong></li><li><a href="https://data.mail.ru/blog/view/282/">Компьютерное зрение</a><strong>3.39</strong></li><li><a href="https://data.mail.ru/blog/view/283/">Методы оптимизации в машинном обучении</a><strong>2.28</strong></li><li><a href="https://data.mail.ru/blog/view/273/">Общие вопросы</a><strong>2.26</strong></li><li><a href="https://data.mail.ru/blog/view/339/">Машинное обучение в продакшене</a><strong>0.00</strong></li><li><a href="https://data.mail.ru/blog/view/315/">Машинное обучение на графах и анализ социальных сетей</a><strong>0.00</strong></li><li><a href="https://data.mail.ru/blog/view/290/">Обработка естественного языка</a><strong>0.00</strong></li><li><a href="https://data.mail.ru/blog/view/340/">Обработка звука и речевые технологии</a><strong>0.00</strong></li><li><a href="https://data.mail.ru/blog/view/297/">Практический курс Big Data</a><strong>0.00</strong></li></ul></div></div><footer><a href="https://data.mail.ru/blog/">Все блоги</a></footer></div></div>
+
+<script src="./hw_1_description_files/panels.min.js"></script>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    
+
+    <footer id="footer">
+        <div class="copyright_new">
+            Лаборатория Технопарка, <a target="_blank" href="https://mail.ru/">Mail.ru Group</a>
+
+            <div class="version">
+                Версия портала - 5.47.7
+            </div>
+        </div>
+        <a class="feedback_link" href="https://data.mail.ru/bugreport/list/">Обратная связь</a>
+    </footer>
+</div>
+
+
+
+
+
+
+
+<div class="dropdown-notification__list" id="dropdown-notification__list" style="display: none;">
+    <div class="dropdown-triangle"></div>
+    <div class="notifications__header">
+        <b>Уведомления</b>
+        <a class="notifications__read-all" id="notifications__read-all" style="display: none">Сбросить все</a>
+    </div>
+    <div class="notifications__body">
+    <div class="notification__empty">Нет новых уведомлений</div>
+</div>
+</div>
+
+
+<aside class="toolbar" id="toolbar" style="position: fixed; left: 1520px; top: 136px; display: block;">
+    <section class="toolbar-scrollup" id="toolbar_scrollup" style="display: block;">
+        <a href="https://data.mail.ru/blog/topic/view/18519/#" title="Вверх"><i></i></a>
+    </section>
+</aside>
+
+<script>
+    $(function () {
+        $('.logout').on('click', function () {
+            $('#logout_form').submit();
+        });
+    });
+    window.localStorage.setItem('token', '');
+</script>
+
+<div class="modal code-language-list" id="window_upload_img" style="z-index: 9999999999">
+    <center>
+    <header class="modal-header">
+        <h3>Вставка кода</h3>
+        <a href="https://data.mail.ru/blog/topic/view/18519/#" class="close jqmClose"></a>
+    </header>
+    <div class="modal-content">
+        <form id="code-language-list" class="tab-content js-block-upload-img-content">
+            <select id="code-language" class="code-language-list">
+                <option value="" selected="">Автоматически</option>
+                <option value="java">Java</option>
+                <option value="js">JavaScript</option>
+                <option value="php">Php</option>
+                <option value="cpp">C/C++</option>
+                <option value="perl">Perl</option>
+                <option value="python">Python</option>
+                <option value="go">Go</option>
+                <option value="css">CSS</option>
+                <option value="bash">Bash</option>
+                <option value="nginx">Nginx</option>
+                <option value="sql">SQL</option>
+            </select>
+            <button type="submit" class="button button-primary">Вставить</button>
+            <button type="submit" class="button jqmClose">Отмена</button>
+        </form>
+    </div>
+    </center>
+</div>
+
+
+<div class="modal modal-image-upload jqm-init" id="window_upload_img" style="z-index: 9999999999">
+    <header class="modal-header">
+        <h3>Вставка изображения</h3>
+        <a href="https://data.mail.ru/blog/topic/view/18519/#" class="close jqmClose"></a>
+    </header>
+
+    <div class="modal-content">
+        <ul class="nav nav-pills nav-pills-tabs">
+            <li class="active js-block-upload-img-item" data-type="pc"><a href="https://data.mail.ru/blog/topic/view/18519/#">С компьютера</a></li>
+            <li class="js-block-upload-img-item" data-type="link"><a href="https://data.mail.ru/blog/topic/view/18519/#">Из интернета</a></li>
+        </ul>
+
+        <form method="POST" action="https://data.mail.ru/attachments/image/upload/comments/" enctype="multipart/form-data" id="block_upload_img_content_pc" class="tab-content js-block-upload-img-content" data-type="pc">
+            <!-- Show error msg if no link OR link doesn't lead to an image -->
+            <p class="img_file__type_error"></p>
+            <!-- End of error msg paragraph -->
+            <p><label for="img_file">Файл:</label>
+                <input type="file" name="filedata" id="img_file" value="" class="input-text input-width-full" accept="image/*"></p>
+            <input type="hidden" name="csrfmiddlewaretoken" value="hmQcaFLAxI1qCr50NH4QXwxLAEcbkF2D">
+
+            
+
+            <p><label for="form-image-title">Описание:</label>
+                <input type="text" name="title" id="form-image-title" maxlength="100" value="" class="input-text input-width-full"></p>
+
+
+            <button type="submit" class="button button-primary" id="submit-image-upload" data-url="/attachments/image/upload/link/comments/" data-max-size="20">Загрузить</button>
+            <button type="submit" class="button jqmClose">Отмена</button>
+        </form>
+
+
+        <form method="POST" action="https://data.mail.ru/blog/topic/view/18519/" enctype="multipart/form-data" id="block_upload_img_content_link" onsubmit="return false;" style="display: none;" class="tab-content js-block-upload-img-content" data-type="link">
+            <!-- Show error msg if no link OR link doesn't lead to an image -->
+            <p class="img_file__type_error"></p>
+            <!-- End of error msg paragraph -->
+            <p><label for="img_url">Ссылка на изображение:</label>
+                <input type="text" name="img_url" id="img_url" value="http://" class="input-text input-width-full"></p>
+
+            <p>
+                <label for="form-image-url-align">Выравнивание:</label>
+                <select name="align" id="form-image-url-align" class="input-width-full">
+                    <option value="">нет</option>
+                    <option value="left">слева</option>
+                    <option value="right">справа</option>
+                    <option value="center">по центру</option>
+                </select>
+            </p>
+
+            <p><label for="form-image-url-title">Описание:</label>
+                <input type="text" name="title" id="form-image-url-title" maxlength="100" value="" class="input-text input-width-full">
+            </p>
+
+
+            <button type="submit" class="button button-primary" id="submit-image-upload-link">Вставить как ссылку
+            </button>
+            или
+            <button type="submit" class="button button-primary" id="submit-image-upload-link-upload" data-url="/attachments/image/upload/link/comments/
+                              " data-max-size="20">Загрузить
+            </button>
+            <button type="submit" class="button jqmClose">Отмена</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal-link-upload" id="window_upload_img" style="z-index: 9999999999">
+    <header class="modal-header">
+        <h3>Вставка ссылки</h3>
+        <a href="https://data.mail.ru/blog/topic/view/18519/#" class="close jqmClose"></a>
+    </header>
+    <div class="modal-content">
+        <form id="block_upload_link" class="tab-content js-block-upload-img-content">
+            <p><input type="text" id="form-link" value="http://" class="input-text input-width-full"></p>
+
+            <button type="submit" class="button button-primary">Вставить</button>
+        </form>
+    </div>
+</div>
+	
+
+
+
+<ul class="dropdown-user-menu" id="dropdown-user-menu" style="display: none; right: calc(100% - 1512.99px); top: 55px; min-width: 236px;">
+
+
+
+
+    <li class="item-personal-profile">
+        <a href="https://data.mail.ru/profile/d.vaskin/">
+            <i class="item-icon fas fa-fw fa-address-card"></i>Профиль
+        </a>
+    </li>
+    
+    
+    <li class="item-messages">
+        <a href="https://data.mail.ru/talk/" id="new_messages">
+            <i class="item-icon fas fa-fw fa-envelope"></i>Все чаты
+        </a>
+    </li>
+    <li class="item-profile">
+        <a href="https://data.mail.ru/blog/topics/draft/">
+            <i class="item-icon fas fa-fw fa-file"></i>Мои черновики</a>
+    </li>
+    <li class="item-settings">
+        <a href="https://data.mail.ru/settings/">
+            <i class="item-icon fas fa-fw fa-cog"></i>Настройки</a>
+    </li>
+    <li class="item-signout">
+        <a href="https://data.mail.ru/blog/topic/view/18519/#" class="logout">
+            <i class="item-icon fas fa-fw fa-sign-out-alt"></i>Выход</a>
+
+        <form action="https://data.mail.ru/logout/" id="logout_form" method="POST">
+            <input type="hidden" name="csrfmiddlewaretoken" value="hmQcaFLAxI1qCr50NH4QXwxLAEcbkF2D">
+        </form>
+    </li>
+</ul><ul class="dropdown-user-menu dropdown-write-menu" id="dropdown-write-menu" style="display: none; left: 973.938px; top: 55px; min-width: 53px;">
+    
+
+    <li>
+        <a href="https://data.mail.ru/blog/topic/create/">
+            <i class="item-icon fas fa-book"></i>Создать топик
+        </a>
+    </li>
+
+    <li>
+        <a href="https://data.mail.ru/talk/#create">
+            <i class="item-icon fas fa-fw fa-envelope"></i>Создать чат
+        </a>
+    </li>
+
+    
+</ul><ul class="dropdown-user-menu dropdown-navigation-menu" id="dropdown-navigation-menu" style="display: none; left: 0px; top: 55px; min-width: 0px;">
+    
+        <li class="active">
+            <a href="https://data.mail.ru/blog/">Блоги </a>
+        </li>
+    
+        <li class="">
+            <a href="https://data.mail.ru/people/">Люди </a>
+        </li>
+    
+        <li class="">
+            <a href="https://data.mail.ru/curriculum/program/">Программа </a>
+        </li>
+    
+        <li class="">
+            <a href="https://data.mail.ru/schedule/">Расписание </a>
+        </li>
+    
+</ul></body></html>
