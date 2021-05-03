@@ -10,7 +10,7 @@ Legend: ![](./icons/pdf.png) — slides, ![](./icons/jupyter.png) — code, ![](
 Week | What | Where | When
 :--: | :--: | :---: | :--:
 [1] | Лекция - ML in prod;   Семинар - GIT | [![Lection](./icons/pdf.png)](lections/ML_in_prod_intro.pdf) [![Seminar](./icons/pdf.png)](seminars/GIT.pdf) [![Youtube](./icons/youtube.png)](https://youtu.be/j2TFukHcjDY) | 30.03.2021
-[2] | Production Python code | [![](./icons/pdf.png)](lections//Production_python.pdf)  [![](./icons/youtube.png)](https://youtu.be/9dDgfPPgNVU) | 06.04.2021
+[2] | Production Python code | [![](./icons/pdf.png)](lections//Production_python.pdf) [![](./icons/python.jpg)](seminars//ml_project_example-main)  [![](./icons/youtube.png)](https://youtu.be/9dDgfPPgNVU) | 06.04.2021
 [HW] | Production ML Project | [![HW](./icons/made2.png)](hw/hw1.pdf) | 09.04.2021
 [3] | Воспроизводимость ML; использование DVC | [![](./icons/pdf.png)](lections/Vosproizvodimost_dvc.pdf) [![](./icons/youtube.png)](https://youtu.be/uZ5kVMJej-s) | 13.04.2021
 [4] | Docker и Rest Services | [![](./icons/pdf.png)](lections//Docker_and_rest.pdf)  [![](./icons/youtube.png)](https://youtu.be/bo_lbJtTWAg) | 27.04.2021
