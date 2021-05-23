@@ -9,7 +9,6 @@ from ml_example.enities.feature_params import FeatureParams
 
 
 def process_categorical_features(categorical_df: pd.DataFrame) -> pd.DataFrame:
-
     categorical_pipeline = build_categorical_pipeline()
     return pd.DataFrame(categorical_pipeline.fit_transform(categorical_df).toarray())
 
