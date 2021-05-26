@@ -18,4 +18,5 @@ Week | What | Where | When
 [5] | Data pipelines | [![](./icons/pdf.png)](lections//data_pipelines.pdf) [![](./icons/python.jpg)](seminars//airflow-examples-main) [![](./icons/youtube.png)](https://youtu.be/Ck1EDVhPYFU) | 11.05.2021
 
 DVC    - https://dvc.org/doc/start
+
 MLflow - https://mlflow.org/docs/latest/index.html
