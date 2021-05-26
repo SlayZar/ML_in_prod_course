@@ -17,7 +17,7 @@ Week | What | Where | When
 [HW2] | Production ML Project part 2 | [![HW](./icons/made2.png)](hw/hw2.pdf) | 02.05.2021
 [5] | Data pipelines | [![](./icons/pdf.png)](lections//data_pipelines.pdf) [![](./icons/python.jpg)](seminars//airflow-examples-main) [![](./icons/youtube.png)](https://youtu.be/Ck1EDVhPYFU) | 11.05.2021
 
-*** Ссылки:***
+***Ссылки:***
 
 Main git - https://github.com/made-ml-in-prod-2021
 
