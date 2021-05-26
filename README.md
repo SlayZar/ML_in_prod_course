@@ -16,6 +16,7 @@ Week | What | Where | When
 [4] | Docker и Rest Services | [![](./icons/pdf.png)](lections//Docker_and_rest.pdf) [![](./icons/python.jpg)](seminars//inference_examples-main) [![](./icons/youtube.png)](https://youtu.be/bo_lbJtTWAg) | 27.04.2021
 [HW2] | Production ML Project part 2 | [![HW](./icons/made2.png)](hw/hw2.pdf) | 02.05.2021
 [5] | Data pipelines | [![](./icons/pdf.png)](lections//data_pipelines.pdf) [![](./icons/python.jpg)](seminars//airflow-examples-main) [![](./icons/youtube.png)](https://youtu.be/Ck1EDVhPYFU) | 11.05.2021
+[6] | Kubernetes | [![](./icons/pdf.png)](lections//kubernetes.pdf)[![](./icons/youtube.png)](https://youtu.be/qbAcskug5UM) | 25.05.2021
 
 ***Ссылки:***
 
@@ -24,3 +25,5 @@ Main git - https://github.com/made-ml-in-prod-2021
 DVC    - https://dvc.org/doc/start
 
 MLflow - https://mlflow.org/docs/latest/index.html
+
+Kubernetes - https://k8slens.dev/
