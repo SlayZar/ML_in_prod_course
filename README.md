@@ -5,7 +5,7 @@ This repository contains notebooks for ML in production course.
 
 ### Lectures
 
-Legend: ![](./icons/pdf.png) — slides, ![](./icons/jupyter.png) — code, ![](./icons/youtube.png) — video.
+Legend: ![](./icons/pdf.png) — slides, ![](./icons/jupyter.png) — code, ![](./icons/youtube.png) — video, ![](./icons/pdf.png) - seminar projects
 
 Week | What | Where | When
 :--: | :--: | :---: | :--:
