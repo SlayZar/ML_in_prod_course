@@ -19,7 +19,10 @@ Week | What | Where | When
 [HW3] | Airflow Project | [![HW](./icons/made2.png)](hw/hw3.pdf) | 20.05.2021
 [6] | Kubernetes | [![](./icons/pdf.png)](lections//kubernetes.pdf)[![](./icons/youtube.png)](https://youtu.be/qbAcskug5UM) | 25.05.2021
 [7] | CICD для ML моделей | [![](./icons/pdf.png)](lections//devops.pdf)[![](./icons/youtube.png)](https://youtu.be/EbkExSUjJ7M) | 01.06.2021
+[HW4] | Kubernetes Project | [![HW](./icons/made2.png)](hw/hw4.pdf) | 02.06.2021
 [8] | Очереди сообщений и Feature Store | [![](./icons/pdf.png)](lections//feature_store.pdf)[![](./icons/youtube.png)](https://youtu.be/QpetATgXHoI) | 08.06.2021
+[9] | Мониторинг, постепенные выкатки | [![](./icons/pdf.png)](lections//Monitoring.pdf)[![](./icons/youtube.png)](https://youtu.be/b60EaEzfbTw) | 14.06.2021
+[10] | Подведение итогов и решения в k8s для МЛ | [![](./icons/pdf.png)](lections//Monitoring.pdf)[![](./icons/youtube.png)](https://youtu.be/i3sF0PQuQG8) | 15.06.2021
 
 ***Ссылки:***
 
@@ -30,6 +33,9 @@ DVC    - https://dvc.org/doc/start
 MLflow - https://mlflow.org/docs/latest/index.html
 
 Kubernetes - https://k8slens.dev/
+https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-strong-getting-started-strong-
+
+lstio - https://istio.io/latest/docs/setup/getting-started/
 
 Github with projects - https://github.com/demo-ml-cicd
 
